@@ -1,0 +1,23 @@
+LDAP (Lightweight Directory Access Protocol)
+
+
+c'est un protocol donc n'importe quel os peut l'implémenter 
+
+
+
+
+
+
+bind → s'authentifier (= login)
+search → chercher des entrées (avec des filtres comme (&(objectClass=user)(sAMAccountName=throbert)))
+add / modify / delete → CRUD
+unbind → close la connexion
+
+
+
+
+
+
+
+communication sur port 389.
+annuaire pour chaque objet,  avec un GUID + un DN (distinguished name)

@@ -1,0 +1,8 @@
+
+
+
+L'active directory c 'est une giga DB avec des  clefs GUID et DN pour identifier des objets et donc des machines ou des users
+dans un cluster de travail
+
+
+pour gerer le partage de fichier ou les permissions et acces de chaque partis. 

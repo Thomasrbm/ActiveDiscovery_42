@@ -1,0 +1,82 @@
+Active directory est un annuaire LDAP pour windows
+
+
+
+contient : 
+- objets
+- users
+- ordinateurs etc 
+
+
+centralise l'auth
+
+
+
+
+ ========== Chaque objet est unique. = simpliciter  à retrouver.
+
+
+
+
+
+Classes  :   type d objets  (users, computers)
+
+attributs :  champs d'information sur un objet (name, mail,)
+            il a son type (str, int etc)
+            givenName (une valeure),  memberOf (plusieurs)
+            ID unique mondial
+
+
+schéma :   ensemble des classes attributs déf dans la foret (active directory)
+
+
+========== partition d'annuaire : sous arbre indé de AD
+
+parition de schéma
+partition de configuration
+partition de domaine
+
+OU naming context
+
+
+Sa propre racine (un DN spécifique)
+Sa propre portée de réplication (qui la copie où)
+Son propre contenu (types d'objets différents)
+Ses propres permissions
+
+
+
+
+
+==========  DOMAINE / DOMAINE CONTROLLER :
+
+
+par défaut un pc est un sur un groupe de travail (WORK GROUP)
+
+
+chaque machine a sa DB (SAM)  on a des users dans cette db. (pas pratique car faudrait créer le meme user sur chaque pc, comptes locals)
+
+
+
+
+Le domaine active directory,  on a une db centralisée (tous les ordi permette de se co à son compte.)
+comme à 42
+
+
+les contrôlleur de domaine : traite les demande d'auth +  stock les stratégie de groupe ()
+c'est le serveur qui va gerer tout, il stock la base, les parititons
+
+auth avec kerberos, gere les tickets,
+
+en prod, toujours 2 DC ( comme kubernetes  )  = multi master
+
+
+sert aussi de DNS
+
+
+
+
+
+
+
+========== FORET

@@ -1,0 +1,8 @@
+
+
+donne un chemin uniquae vers un objet
+
+cn = common nam = throbert
+ou = organizationalUnit = informatique 
+dc = domain component =  42-shcool
+dc = local = deuxime morceau

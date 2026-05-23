@@ -1,0 +1,21 @@
+======================== LES ROLES SERVEURS (fonctionnalités majeures)
+
+
+
+
+Famille Active Directory (5 rôles installables séparément)
+│
+├── AD DS  = Active Directory Domain Services
+│           ← Le cœur : annuaire + auth + GPO (= "AD" tout court)
+│
+├── AD CS  = Active Directory Certificate Services
+│           ← PKI : émet et gère des certificats, signer des scirpts powershell, https pour les app entreprise
+│
+├── AD FS  = Active Directory Federation Services
+│           ← SSO web inter-organisations (fédération)  (sso single sign on ) 
+│
+├── AD RMS = Active Directory Rights Management Services
+│           ← Protection / DRM de documents (pousse la gestion des droits  : autriser save mais pas screen etc )
+│
+└── AD LDS = Active Directory Lightweight Directory Services
+            ← Annuaire LDAP sans le domaine, AD allégé pour une app externe , tierce

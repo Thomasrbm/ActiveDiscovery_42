@@ -1,0 +1,58 @@
+
+
+
+c'est le service d'authentifier
+
+
+version 5. 
+
+
+il distribue les clefs de sécurité. 
+
+
+il émet des tickes TGT au clients qui les demandes 
+
+le clietns peut joint le TGS pour savoir s'il peut se comme
+
+TGT a une date d'expiration. 
+
+
+
+=============
+
+TGT = Ticket Granting Ticket →  "badge d'entrée" général
+
+TGS = Ticket Granting Service → le composant du KDC qui émet les service tickets 
+
+
+ST = Service Ticket → ticket pour UN service précis
+
+
+
+KDC = Key Distribution Center → le DC qui distribue les tickets (contient AS + TGS)
+
+AS = Authentication Service → la partie du KDC qui émet les TGT
+
+
+
+
+=========== Le KDC vérifie :
+
+Il prend le hash d'alice qu'il a stocké dans AD
+Il déchiffre le timestamp
+✅ Si déchiffrement OK + timestamp < 5 min → alice connaît bien son password → TGT émis
+❌ Sinon → refus
+
+
+
+TGT est chiffré avec un hash, seul kdc peut le lirea
+
+
+================  AVANTAGES 
+
+
+Le password n'est jamais envoyé sur le réseau
+SSO : tape ton mot de passe une fois, accède à tout pendant 10h
+Le KDC est stateless : pas de sessions à mémoriser
+Les tickets sont inviolables (chiffrement + signatures)
+
