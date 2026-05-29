@@ -54,6 +54,30 @@ CHANGER IP :
 10. Ouvrir le Gestionnaire de serveur et appuyer sur F5 pour tout actualiser.
 
 
+======
+
+
+ajouter la vm client + ping entre les 2 vm 
+
+WINDOWS PRO (sans key pas de pb)
+
+
+
+1. VM Client > Paramètres > Réseau : Réseau interne (ex: domolia-net) + Câble connecté.
+2. Installer Windows 10 : Cliquer "Je n'ai pas de clé" > Choisir "Windows 10 Pro".
+3. Type d'install : Choisir "Personnalisé" > Sélectionner le disque de 40 Go.
+4. Configuration initiale : Choisir "Pour une organisation" > Cliquer "Se joindre à un domaine à la place" (compte local).
+5. Réseau (TCP/IPv4) : Mettre IP 192.168.10.30 / Masque 255.255.255.0 / DNS 192.168.10.10.
+6. Pare-feu Windows : Aller dans "Activer/Désactiver" > Désactiver pour le Réseau Privé (Autorise le Ping).
+7. Jonction : Rechercher "Paramètres système avancés" > Onglet "Nom de l'ordinateur" > Modifier.
+8. Entrer le nom (ex: PC-ADMIN-01) > Cocher "Domaine" > Taper "domolia.local".
+9. Authentification : Entrer "Administrateur" + mot de passe du serveur.
+10. Redémarrer la VM après le message de bienvenue.
+
+
+
+
+
 
 
 =====
