@@ -6,3 +6,87 @@ dans un cluster de travail
 
 
 pour gerer le partage de fichier ou les permissions et acces de chaque partis. 
+
+
+
+====================================================================
+
+
+
+
+STEPS : 
+
+
+
+
+renommer le pc :  
+
+recherche systeme.
+param avancé du system a droite 
+
+
+propriété systeme  -> modifier 
+
+
+
+=====
+
+dans le drapeau  fait le setup du dns controlleur
+
+
+
+
+=====
+
+
+CHANGER IP : 
+
+
+1. Éteindre les VM et passer toutes les cartes réseau en "Réseau Interne" (ex: domolia-net).
+2. Sur SRV-ADMIN -> Propriétés de la carte réseau -> TCP/IPv4.
+3. Configurer IP: 192.168.10.10 / Masque: 255.255.255.0 / DNS: 127.0.0.1.
+4. Ouvrir cmd (Admin) sur SRV-ADMIN et taper : ipconfig /flushdns
+5. Taper : ipconfig /registerdns
+6. Taper : net stop netlogon && net start netlogon
+7. Ouvrir la console DNS -> Zones de recherche directe -> Corriger les anciennes IP 10.0.2.15 vers 192.168.10.10.
+8. Faire clic droit sur le serveur dans la console DNS -> Effacer le cache.
+9. Taper dans le cmd : net stop dns && net start dns
+10. Ouvrir le Gestionnaire de serveur et appuyer sur F5 pour tout actualiser.
+
+
+
+
+=====
+
+
+
+fichiers 
+
+
+
+par defaut y'a  : 
+
+- netlogon  ( network log  on )    
+- sysbol  ( )
+
+
+
+
+
+========
+
+
+
+
+les users : 
+
+
+
+
+chercher utilisateurs
+
+
+
+
+on ovit le domains les ordis etc. 
+

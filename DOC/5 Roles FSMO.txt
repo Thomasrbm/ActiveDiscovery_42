@@ -1,0 +1,61 @@
+
+
+
+
+Un role  =  donne la capacite a un controlleur de domaine de realiser une action en particulier par rapport aux autres controlleurs de domaine
+de notre cluster
+
+
+
+FSMO = Flexible Single Master Operation 
+
+
+
+Un seul CDD pour avoir un role, il ne peuvent pas etre partage mais 1 peut en avoir plusieurs
+
+
+
+
+Il y a aussi des roles unique au sein d une meme foret.
+
+
+
+
+
+==================== 5 roles : 
+
+
+================ 2 ROLE UNIQUE FORET
+
+======== MAITRE D ATTRIBUTION DES NOMS DE DOMAINE
+
+gere l attribution des nom au sein de la foret entiere
+Autorise les noms 
+
+
+======== CONTROLEUR DE SCHEMA
+
+gere les modification du schema AD (ajoute de classe attributs )
+
+
+
+
+================ 3 ROLE UNIQUE DOMAINE
+
+
+
+======== MAITRE RID
+
+
+
+
+======== MAITRE D INFRASTRUCTURE
+
+
+======== EMULATEUR PDC
+
+
+
+
+
+
