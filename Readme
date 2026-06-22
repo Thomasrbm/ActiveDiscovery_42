@@ -28,6 +28,9 @@ changer ip :
 - dns prefere = celui du Domain controller principal
 
 
+desactiver les firewall
+
+
 2/ naming
 
 param
@@ -89,3 +92,58 @@ propriete -> securite -> modifier
 add -> worker
 
 droits : modifier 
+
+
+
+
+8/ sur la vm client
+
+
+ajouter le pc a domolia.local (actuellement dans workgroup)
+
+
+settings -> system -> about -> advandec settings  
+
+
+computer name ->  ... domain / workgroup  -> change
+
+
+mettre credential de l administrator general
+
+
+
+
+
+
+
+
+
+9/ voir les fichiers depuis worker
+
+ 
+
+ windows + r 
+
+ \\ip
+
+ mettre credential admins
+
+
+
+
+
+
+
+
+
+================================ EVAL =====================
+
+
+verifier que vien sur domain
+
+
+systeminfo | findstr /i "domain"
+
+
+
+2eme user test2   Qweqwe123*
