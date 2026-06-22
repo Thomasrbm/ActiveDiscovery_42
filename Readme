@@ -147,3 +147,45 @@ systeminfo | findstr /i "domain"
 
 
 2eme user test2   Qweqwe123*
+
+
+
+
+
+
+
+DOMAINE = unite de base de AD,  unite logique aui centralise les users, ordis, ressources (partages)
+
+
+CONTROLLER DE DOMAINE = c est la machine server qui heberge le domaine gere les politique et regles, roles
+
+ARBRE =  plusieurs domaines avec hierarchie : domolia.local et admin.domolia.local.
+
+FORET = cree des les premiers domaine,  quand on domaine avec sous domaine rejoint ca fait un arbre ensuite en plus. 
+		c est le conteneur global des qu il y a un domaine.
+
+FQDN  = fully qualified domaine name =  srv-workshop.domolia.local
+
+
+
+
+replication AD = les deux DC synchronise toute la db, sinon si un server admin crash on perd toute
+
+GPO = les regles applique de base = forcer un mdp complexe
+
+
+OU = un conteneur pour orgnaiser les user dans le domaine (le workshop par exemple)
+
+
+NTFS = permissions des fichiers  = new technologiey file system
+
+DNS =  domain name system = traduit les nom de domaine du domain en ip reelle
+
+
+
+
+
+
+
+
+
