@@ -70,6 +70,9 @@ WINDOWS PRO (sans key pas de pb)
 5. Réseau (TCP/IPv4) : Mettre IP 192.168.10.30 / Masque 255.255.255.0 / DNS 192.168.10.10.
 6. Pare-feu Windows : Aller dans "Activer/Désactiver" > Désactiver pour le Réseau Privé (Autorise le Ping).
 7. Jonction : Rechercher "Paramètres système avancés" > Onglet "Nom de l'ordinateur" > Modifier.
+
+(system properties ) dans le about you pc => advanced system
+
 8. Entrer le nom (ex: PC-ADMIN-01) > Cocher "Domaine" > Taper "domolia.local".
 9. Authentification : Entrer "Administrateur" + mot de passe du serveur.
 10. Redémarrer la VM après le message de bienvenue.
