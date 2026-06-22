@@ -1,0 +1,91 @@
+
+
+
+Steps :
+
+
+0/ install
+
+installer windows server LTS
+
+experience graphique + personnalise 
+
+
+
+1/ reseau
+
+se mettre en bridged
+
+changer ip : 
+- panneau de config
+- reseau
+- centre de reseau et partage 
+- a gauche : modifier les param de la carte 
+- clique droit -> propriete
+- double cliaue sur la case a cocher ipv4
+- mettre ip dans le sous reseau
+- masque par defaut
+- dns prefere = celui du Domain controller principal
+
+
+2/ naming
+
+param
+system
+
+renommer ce pc 
+
+3/  Roles
+
+
+dans le manager de serveur (le gui central)
+
+- add roles 
+
+next jusqu a case a cocher
+
+- Service AD DS
+(le principal coche aussi DNS)
+
+
+
+4/  rejoindre la foret (ou creer)
+
+- drapeau jaune
+- promouvoir
+
+- ajouter a un domaine existant
+
+-  choisir le nom de domaine deja existant 
+- mettre credential de l admin du serveur principal domolia\administrator
+
+
+
+5/ folders
+
+creer fichier dans Ce pc
+
+proprietes -> sharing -> cocher sharing
+
+
+6/ users
+
+
+creer users
+
+general pannel server
+
+outils -> utilisateurs -> domolia.local -> users
+
+dans le blanc clique droit -> nouveau -> user
+
+
+
+
+7/  reconfif fichier partage pour l user
+
+
+propriete -> securite -> modifier
+add -> worker
+
+droits : modifier 
